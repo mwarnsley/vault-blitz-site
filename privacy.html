@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy · Vault Blitz: Heist Match</title>
+    <meta
+      name="description"
+      content="How Vault Blitz: Heist Match handles information: local saves, crash and error diagnostics, tester feedback and support email."
+    />
+    <meta name="theme-color" content="#0a0c10" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="./">
+          <img src="assets/favicon.png" alt="" width="32" height="32" />
+          <span>Vault <span class="brand__accent">Blitz</span></span>
+        </a>
+        <nav class="site-nav" aria-label="Main">
+          <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <h1>Privacy Policy</h1>
+      <p class="meta">
+        Effective date: <time datetime="2026-11-01">November 1, 2026</time>
+      </p>
+      <p class="lede">
+        This policy explains what information the Vault Blitz: Heist Match app (“Vault Blitz” or
+        “the app”) handles, why, and who else processes it. It covers the current test builds for
+        iOS and Android and this website.
+      </p>
+
+      <nav class="toc" aria-labelledby="toc-title">
+        <h2 id="toc-title">Contents</h2>
+        <ol>
+          <li><a href="#who">Who we are</a></li>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#device">Information saved on your device</a></li>
+          <li><a href="#diagnostics">Crash and error diagnostics (Sentry)</a></li>
+          <li><a href="#testing">Test programs (TestFlight and Google Play)</a></li>
+          <li><a href="#support">Support email</a></li>
+          <li><a href="#not-collected">What the app does not do</a></li>
+          <li><a href="#website">This website</a></li>
+          <li><a href="#retention">Retention and deletion</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#international">Where information is processed</a></li>
+          <li><a href="#children">Children</a></li>
+          <li><a href="#choices">Your choices and requests</a></li>
+          <li><a href="#future">Features that are not active</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="who">1. Who we are</h2>
+      <p>
+        Vault Blitz is developed and operated by Marcus Warnsley, an individual developer (“we”,
+        “us”). You can reach us at
+        <a href="mailto:idreamofcode@gmail.com">idreamofcode@gmail.com</a>.
+      </p>
+
+      <h2 id="summary">2. Summary</h2>
+      <div class="table-wrap">
+        <table>
+          <caption class="meta">What the current test builds handle</caption>
+          <thead>
+            <tr>
+              <th scope="col">Information</th>
+              <th scope="col">Where it goes</th>
+              <th scope="col">Why</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Game progress and settings</td>
+              <td>Stays on your device</td>
+              <td>So the game continues where you left off</td>
+            </tr>
+            <tr>
+              <td>
+                Crash and error reports, sent only when an error occurs, with limited technical
+                context (see section 4 on IP address and approximate location)
+              </td>
+              <td>Sent to Sentry, our error-monitoring provider</td>
+              <td>To find and fix crashes and bugs</td>
+            </tr>
+            <tr>
+              <td>Test invitations, beta feedback and TestFlight crash reports</td>
+              <td>Handled by Apple or Google, then shown to us</td>
+              <td>To run the test and act on feedback</td>
+            </tr>
+            <tr>
+              <td>Emails you send us</td>
+              <td>Our email inbox</td>
+              <td>To answer you and fix reported problems</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        The app has no advertising, no account sign-in and no gameplay analytics, and we do not
+        sell information about you. Because it sends crash and error reports, the app does
+        collect some technical information, described below.
+      </p>
+
+      <h2 id="device">3. Information saved on your device</h2>
+      <p>
+        The app saves your game progress on your device: your gold balance, tools, campaign stars
+        and progress, saved attempts, reward records, Academy progress and your settings (such as
+        sound volume and board theme). This information is not sent to us.
+      </p>
+      <ul>
+        <li>
+          <strong>Backups.</strong> Vault Blitz stores game progress and settings locally and does
+          not provide its own cloud-save synchronization. On Android, eligible app data may be
+          backed up or transferred by the operating system, depending on your device and backup
+          settings. Restoration is not guaranteed, and uninstalling or resetting may erase
+          progress. We cannot see, recover or restore your progress. On iOS, we have not verified
+          whether system backups include the app's saved data.
+        </li>
+        <li>
+          <strong>Reset.</strong> Settings → Intel → Reset Local Progress returns your progress to
+          a new player's, and keeps your settings.
+        </li>
+        <li>
+          <strong>Delete.</strong> Settings → Intel → Delete Account removes everything the app
+          stores on this device, including settings. In the test builds there is no online
+          account, so this action only affects your device.
+        </li>
+      </ul>
+      <p>
+        Neither reset nor delete removes crash and error reports that were already sent (see
+        <a href="#retention">Retention and deletion</a>).
+      </p>
+
+      <h2 id="diagnostics">4. Crash and error diagnostics (Sentry)</h2>
+      <p>
+        Test builds use <a href="https://sentry.io/">Sentry</a> (Functional Software, Inc.) to
+        report crashes and unexpected errors to us. A report is created only when the app crashes
+        or hits an error; the app does not send reports about normal play.
+      </p>
+      <h3>What a report contains</h3>
+      <ul>
+        <li>
+          The type of error and where in the app's code it happened (stack trace file names,
+          function names and line numbers). Free-text error messages are replaced with a generic
+          placeholder before sending.
+        </li>
+        <li>
+          The app's identity and version: bundle identifier, version, build number, the
+          environment (“testing”), platform and the Sentry software version.
+        </li>
+        <li>A report ID and the time of the error.</li>
+        <li>
+          Up to 20 recent events from a fixed list, to show what led to the error: which screen
+          was open, whether the app was in the foreground or background, and the name and outcome
+          of a game operation (for example saving progress, starting an attempt or using a tool).
+          These can include a campaign vault name, an attempt number such as “attempt-3”, a reward
+          identifier, a tool type or the kind of save involved.
+        </li>
+      </ul>
+      <h3>What the app removes or does not collect</h3>
+      <p>
+        The app is configured not to attach your name, email, a player or account ID, the device
+        name, user or device details, your gold balance, save files, text you type, screenshots,
+        screen recordings, the screen layout, network requests or console logs. Session tracking,
+        performance monitoring and session replay are turned off.
+      </p>
+      <h3>IP address and approximate location</h3>
+      <p>
+        Like any internet service, Sentry receives the device's IP address when a report is sent
+        to it. This applies only to devices that send a crash or error report, not to everyone who
+        plays. We have set up our Sentry project so that IP addresses are not stored with error
+        reports and the approximate location Sentry would otherwise derive from them (such as a
+        country or city) is removed. Some earlier test reports, sent before these settings were in
+        place, include an approximate location; they are kept and deleted as described in
+        <a href="#retention">Retention and deletion</a>.
+      </p>
+      <h3>Delivery</h3>
+      <p>
+        If the device is offline, a small number of reports (up to 20) can wait on the device and
+        be sent the next time the app runs with a connection.
+      </p>
+      <h3>Why and who</h3>
+      <p>
+        We use these reports only to diagnose and fix problems in the app. Sentry processes them
+        on our behalf as a service provider, on servers in the United States. Sentry's handling is
+        described in the <a href="https://sentry.io/privacy/">Sentry Privacy Policy</a>.
+      </p>
+
+      <h2 id="testing">5. Test programs (TestFlight and Google Play)</h2>
+      <p>
+        The app is currently distributed only to invited testers through Apple TestFlight and
+        Google Play internal testing. These programs are run by Apple and Google under their own
+        terms and privacy policies:
+        <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a> and
+        <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+      </p>
+      <ul>
+        <li>
+          To invite you, we give Apple or Google the email address you provide for testing. It is
+          stored in App Store Connect or Google Play Console.
+        </li>
+        <li>
+          If you send feedback through TestFlight, Apple shows us your comments, any screenshot
+          you attach, and the device and app details Apple includes. If you were invited by email,
+          your email address appears with your feedback. If the app crashes on iOS, Apple may also
+          provide crash reports through TestFlight.
+        </li>
+        <li>
+          Google Play may provide us with crash and performance information about the test build
+          according to your device settings and Google's policies.
+        </li>
+      </ul>
+
+      <h2 id="support">6. Support email</h2>
+      <p>
+        If you email <a href="mailto:idreamofcode@gmail.com">idreamofcode@gmail.com</a>, we receive
+        your email address, your message and anything you attach, such as screenshots or device
+        details. We use this only to reply and to fix the problems you report. The inbox is
+        provided by Google (Gmail). Please do not send passwords, access tokens or payment-card
+        details.
+      </p>
+
+      <h2 id="not-collected">7. What the app does not do</h2>
+      <ul>
+        <li>No advertising, and no advertising or tracking identifiers.</li>
+        <li>No gameplay analytics service.</li>
+        <li>No account sign-in in the test builds.</li>
+        <li>
+          No access to your device's location services (such as GPS), contacts, photos, camera or
+          microphone. The app plays music and sound effects only. How crash and error reports
+          handle IP addresses and approximate location is described in
+          <a href="#diagnostics">section 4</a>.
+        </li>
+        <li>No real-money purchases in the test builds.</li>
+        <li>We do not sell or rent information about you.</li>
+      </ul>
+      <p>
+        The app's code contains online features (see <a href="#future">Features that are not
+        active</a>). They are switched off in the test builds, which are configured with no online
+        game server, so those features make no network connections.
+      </p>
+
+      <h2 id="website">8. This website</h2>
+      <p>
+        This website is hosted by GitHub Pages. We have not added cookies, analytics, tracking or
+        external fonts. GitHub records visitors' IP addresses for security purposes, as described
+        in the
+        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+          >GitHub General Privacy Statement</a
+        >. Links to other sites, such as Apple, Google and Sentry, are governed by those sites'
+        own policies.
+      </p>
+
+      <h2 id="retention">9. Retention and deletion</h2>
+      <ul>
+        <li>
+          <strong>On your device:</strong> kept until you reset, delete or uninstall (see
+          <a href="#device">section 3</a>).
+        </li>
+        <li>
+          <strong>Crash and error reports:</strong> Sentry keeps individual error events for a
+          period that depends on our Sentry plan: 30 days on the free Developer plan, and 90 days on
+          the Team and Business plans. Our account is currently on a Business plan trial, and we
+          intend to move to the Developer plan when the trial ends. The period that applies is set
+          by Sentry for our plan, so it can change when our plan changes. Once an event expires it
+          can no longer be viewed or restored, but Sentry may keep related records, such as the
+          grouped issue and its total event count. We can also delete reports in Sentry.
+        </li>
+        <li>
+          <strong>Test feedback and invitations:</strong> kept in App Store Connect and Google Play
+          Console under Apple's and Google's retention rules. We can remove a tester from a test.
+        </li>
+        <li>
+          <strong>Support email:</strong>
+          we keep your emails and our replies for as long as we need them to answer your request,
+          follow up on the problem you reported, and meet any legal obligations that apply to us.
+          You can ask us to delete your correspondence, and we will do so unless we need to keep it
+          for one of those reasons.
+        </li>
+      </ul>
+      <p>
+        Crash reports contain no name, email or player ID, so we usually cannot tell which reports
+        came from you. If you ask us to delete them, telling us your device, app build and the
+        approximate time of a crash helps us look.
+      </p>
+
+      <h2 id="security">10. Security</h2>
+      <p>
+        Crash and error reports are sent over encrypted connections (HTTPS). Access to the Sentry
+        project, the testing consoles and the support inbox is limited to the people working on
+        Vault Blitz. No method of transmission or storage is completely secure, and we cannot
+        guarantee absolute security.
+      </p>
+
+      <h2 id="international">11. Where information is processed</h2>
+      <p>
+        Sentry stores our crash and error reports in the United States. Apple, Google and GitHub
+        may process information in the United States and other countries, as described in their
+        policies. If you live elsewhere, your information may be processed in a country with
+        different data-protection rules from yours.
+      </p>
+
+      <h2 id="children">12. Children</h2>
+      <p>
+        Vault Blitz is intended for teens and adults aged 13 and older. It is not directed to
+        children under 13, and we do not knowingly collect personal information from children
+        under 13. The app does not ask for your age. If you believe a child under 13 has sent us
+        personal information, for example by email, please contact us so we can delete it.
+      </p>
+
+      <h2 id="choices">13. Your choices and requests</h2>
+      <ul>
+        <li>Reset or delete your local data from the app's Settings (see section 3).</li>
+        <li>Stop sending crash reports by uninstalling the app or leaving the test.</li>
+        <li>
+          Ask us what information we hold about you, or ask us to correct or delete it, by
+          emailing <a href="mailto:idreamofcode@gmail.com">idreamofcode@gmail.com</a>. Depending
+          on where you live, you may have additional rights under local law.
+        </li>
+      </ul>
+
+      <h2 id="future">14. Features that are not active</h2>
+      <p>
+        The app's code includes features that are switched off in the current test builds:
+        online bounties and raids, which would use an online game server (Supabase) and an
+        anonymous guest account; publishing vault designs; and a store for real-money gold
+        packs. None of these are active, and the in-app gold store has no real payment system.
+      </p>
+      <p>
+        Before we turn on online features, real-money purchases, analytics or any other new
+        collection of information, we will update this policy to describe what is collected and
+        who processes it, and update the app-store privacy disclosures to match.
+      </p>
+
+      <h2 id="changes">15. Changes to this policy</h2>
+      <p>
+        We will post any changes on this page and update the effective date. If a change is
+        significant, we will also take reasonable steps to let testers know, for example in the
+        test program's release notes.
+      </p>
+
+      <h2 id="contact">16. Contact</h2>
+      <p>
+        Questions or requests about privacy:
+        <a href="mailto:idreamofcode@gmail.com">idreamofcode@gmail.com</a>.
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <ul aria-label="Site">
+          <li><a href="./">Home</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="support.html">Support</a></li>
+        </ul>
+        <p>Contact: <a href="mailto:idreamofcode@gmail.com">idreamofcode@gmail.com</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
